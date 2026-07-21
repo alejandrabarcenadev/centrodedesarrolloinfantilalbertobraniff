@@ -20,7 +20,12 @@ import gal7  from "@/imports/GALERIA__7_.jpg";
 import gal9  from "@/imports/GALERIA__9_.jpg";
 import gal10 from "@/imports/GALERIA__10_.jpg";
 import gal11 from "@/imports/GALERIA__11_.jpg";
-
+import foto1 from "@/imports/foto1.jpg";
+import foto2 from "@/imports/foto 2.jpg";
+import foto3 from "@/imports/foto 3.jpg";
+import foto4 from "@/imports/foto 4.jpg";
+import foto5 from "@/imports/foto 5.jpg";
+import foto6 from "@/imports/foto 6.jpg";
 // ─── Palette ──────────────────────────────────────────────────────────────────
 const NAVY   = "#021b51";
 const YELLOW = "#ffdf00";
@@ -491,7 +496,15 @@ const GALLERY = [
   { src: gal6,  alt: "Niños jugando en el área de tiendita" },
   { src: gal10, alt: "Niño en clase con su cuaderno" },
   { src: gal9,  alt: "Alumno leyendo en la biblioteca del Braniff" },
+
+  { src: foto1, alt: "Niñas participando en una actividad de arte y creatividad." },
+  { src: foto2, alt: "Patio principal y áreas de juego del Kinder Alberto Braniff." },
+  { src: foto3, alt: "Alumno desarrollando habilidades lógico-matemáticas con material didáctico." },
+  { src: foto4, alt: "Niños realizando actividades de psicomotricidad." },
+  { src: foto5, alt: "Alumnos y docentes durante una actividad grupal." },
+  { src: foto6, alt: "Salón de estimulación temprana y desarrollo sensorial." },
 ];
+
 
 const NAV_LINKS = [
   { label: "Inicio", href: "#inicio" },
