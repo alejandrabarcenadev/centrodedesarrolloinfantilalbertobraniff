@@ -727,130 +727,104 @@ export default function App() {
       </section>
 
       {/* ── NOSOTROS / MISIÓN / VISIÓN — navy bg ─────────────────────────────── */}
-      <section id="nosotros" className="py-20 relative overflow-hidden" style={{ backgroundColor: NAVY }}>
+<section id="nosotros" className="py-20 relative overflow-hidden" style={{ backgroundColor: NAVY }}>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
-          <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 mb-3">
-              <Sprout size={13} style={{ color: YELLOW }} />
-              <span className="font-black text-[11px] uppercase tracking-[0.2em]" style={{ color: YELLOW }}>Quiénes somos</span>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-black text-white mt-2 leading-tight">
-              Una comunidad de amor,<br />aprendizaje y crecimiento
-            </h2>
-          </div>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 relative">
+    <div className="text-center mb-14">
+      <div className="inline-flex items-center gap-2 mb-3">
+        <Sprout size={13} style={{ color: YELLOW }} />
+        <span
+          className="font-black text-[11px] uppercase tracking-[0.2em]"
+          style={{ color: YELLOW }}
+        >
+          Quiénes somos
+        </span>
+      </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-            {[
-              { icon: Building2, title: "Quiénes somos", bg: "rgba(255,255,255,0.06)", borderCol: YELLOW, iconColor: YELLOW, desc: "Somos un espacio educativo donde las niñas y los niños encuentran un ambiente seguro, alegre y lleno de experiencias que despiertan su curiosidad natural. Acompañamos su crecimiento desde los primeros meses de vida hasta el preescolar." },
-              { icon: Heart, title: "Nuestra misión", bg: GREEN, borderCol: GREEN, iconColor: "#fff", desc: "Brindar un espacio educativo cálido, seguro e inspirador donde cada niña y niño pueda descubrir el mundo con alegría, desarrollar sus habilidades y fortalecer su confianza a través del juego, la exploración y el aprendizaje significativo." },
-              { icon: Sparkles, title: "Nuestra visión", bg: YELLOW, borderCol: YELLOW, iconColor: NAVY, desc: "Ser una institución reconocida por formar niñas y niños felices, seguros, curiosos y preparados para los retos del futuro. Un espacio donde las familias encuentren mucho más que una escuela: una comunidad educativa." },
-            ].map(({ icon: Icon, title, bg, borderCol, iconColor, desc }) => (
-              <div key={title} className="rounded-3xl p-8 border" style={{ backgroundColor: bg, borderColor: borderCol + "44" }}>
-                <div className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5" style={{ backgroundColor: borderCol + "33" }}>
-                  <Icon size={22} style={{ color: iconColor }} />
-                </div>
-                <h3 className="text-xl font-black mb-4 text-white">{title}</h3>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(220,235,255,0.85)" }}>{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <h2 className="text-3xl md:text-4xl font-black text-white mt-2 leading-tight">
+        Una comunidad de amor,
+        <br />
+        aprendizaje y crecimiento
+      </h2>
+    </div>
 
-      {/* ── VALUES — green bg ────────────────────────────────────────────────── */}
-      <section className="py-20 relative overflow-hidden" style={{ backgroundColor: GREEN }}>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 mb-3">
-              <Sparkles size={13} style={{ color: YELLOW }} />
-              <span className="font-black text-[11px] uppercase tracking-[0.2em]" style={{ color: YELLOW }}>Nuestros valores</span>
-            </div>
-            <h2 className="text-3xl font-black text-white mt-2">Los valores que nos guían cada día</h2>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[
-              { icon: Heart, color: RED, bg: "#fff", title: "Amor y respeto", desc: "Cada niño merece crecer en un ambiente donde se sienta querido, valorado y escuchado." },
-              { icon: BookOpen, color: NAVY, bg: YELLOW, title: "Aprendizaje significativo", desc: "Aprender es descubrir, preguntar, experimentar y disfrutar cada nueva experiencia." },
-              { icon: Handshake, color: NAVY, bg: "#fff", title: "Cercanía con familias", desc: "Construimos relaciones de confianza mediante comunicación abierta y constante." },
-              { icon: Shield, color: GREEN, bg: YELLOW, title: "Seguridad y bienestar", desc: "Un entorno donde los niños pueden jugar, explorar y aprender con total tranquilidad." },
-              { icon: Lightbulb, color: RED, bg: "#fff", title: "Innovación educativa", desc: "Metodologías activas y experiencias creativas que convierten el aprendizaje en aventura." },
-              { icon: GraduationCap, color: NAVY, bg: YELLOW, title: "Desarrollo integral", desc: "Acompañamos el crecimiento emocional, social, físico y cognitivo de cada alumno." },
-            ].map(({ icon: Icon, color, bg, title, desc }) => (
-              <div key={title} className="rounded-3xl p-6 hover:-translate-y-1 transition-all cursor-default shadow-lg" style={{ backgroundColor: bg }}>
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: color + "18" }}>
-                  <Icon size={18} style={{ color }} />
-                </div>
-                <h4 className="font-black text-sm mb-1.5" style={{ color: NAVY }}>{title}</h4>
-                <p className="text-xs text-gray-600 leading-relaxed">{desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── METHODOLOGY — white bg ───────────────────────────────────────────── */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
-            <div className="lg:col-span-2">
-              <div className="inline-flex items-center gap-2 mb-4">
-                <Palette size={13} style={{ color: GREEN }} />
-                <span className="font-black text-[11px] uppercase tracking-[0.2em]" style={{ color: GREEN }}>Nuestra metodología</span>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-black mt-1 mb-5 leading-tight" style={{ color: NAVY }}>
-                Aprendemos jugando,<br />crecemos explorando
-              </h2>
-              <p className="text-gray-600 leading-relaxed mb-10 max-w-xl">
-                Cada jornada está diseñada para que las niñas y los niños aprendan mientras juegan, crean y descubren el mundo. El arte, la ciencia, la música, el movimiento y el inglés forman parte de experiencias cotidianas.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                {[
-                  { icon: BookOpen, label: "Aprendizaje significativo", desc: "Conocimientos construidos de forma natural y divertida", accent: GREEN },
-                  { icon: Heart, label: "Juego intencionado", desc: "Jugar es la forma más profunda de aprender y crecer", accent: RED },
-                  { icon: Users, label: "Formación en valores", desc: "Personas íntegras que viven lo que aprenden cada día", accent: NAVY },
-                  { icon: Lightbulb, label: "Desarrollo de habilidades", desc: "Talentos descubiertos y potenciados en cada actividad", accent: YELLOW },
-                ].map(({ icon: Icon, label, desc, accent }) => (
-                  <div key={label} className="flex gap-4 items-start p-5 rounded-2xl border border-gray-100 hover:shadow-md transition-all">
-                    <div className="w-12 h-12 rounded-2xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: accent === YELLOW ? YELLOW + "55" : accent + "18" }}>
-                      <Icon size={22} style={{ color: accent === YELLOW ? NAVY : accent }} />
-                    </div>
-                    <div>
-                      <h4 className="font-black text-sm leading-tight mb-1" style={{ color: NAVY }}>{label}</h4>
-                      <p className="text-xs text-gray-400 leading-relaxed">{desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              <blockquote className="mt-10 border-l-4 pl-5 py-1" style={{ borderColor: GREEN }}>
-                <p className="text-gray-500 italic text-sm leading-relaxed">
-                  "Educar no es llenar una mente de información, sino encender el deseo de aprender durante toda la vida."
-                </p>
-              </blockquote>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      {[
+        {
+          icon: Building2,
+          title: "Quiénes somos",
+          bg: "rgba(255,255,255,0.06)",
+          borderCol: YELLOW,
+          iconColor: YELLOW,
+          titleColor: "#FFFFFF",
+          textColor: "rgba(220,235,255,0.85)",
+          desc: "Somos un espacio educativo donde las niñas y los niños encuentran un ambiente seguro, alegre y lleno de experiencias que despiertan su curiosidad natural. Acompañamos su crecimiento desde los primeros meses de vida hasta el preescolar."
+        },
+        {
+          icon: Heart,
+          title: "Nuestra misión",
+          bg: GREEN,
+          borderCol: GREEN,
+          iconColor: "#FFFFFF",
+          titleColor: "#FFFFFF",
+          textColor: "rgba(220,235,255,0.85)",
+          desc: "Brindar un espacio educativo cálido, seguro e inspirador donde cada niña y niño pueda descubrir el mundo con alegría, desarrollar sus habilidades y fortalecer su confianza a través del juego, la exploración y el aprendizaje significativo."
+        },
+        {
+          icon: Sparkles,
+          title: "Nuestra visión",
+          bg: YELLOW,
+          borderCol: YELLOW,
+          iconColor: NAVY,
+          titleColor: NAVY,
+          textColor: "rgba(11,32,85,0.88)",
+          desc: "Ser una institución reconocida por formar niñas y niños felices, seguros, curiosos y preparados para los retos del futuro. Un espacio donde las familias encuentren mucho más que una escuela: una comunidad educativa."
+        },
+      ].map(
+        ({
+          icon: Icon,
+          title,
+          bg,
+          borderCol,
+          iconColor,
+          titleColor,
+          textColor,
+          desc,
+        }) => (
+          <div
+            key={title}
+            className="rounded-3xl p-8 border"
+            style={{
+              backgroundColor: bg,
+              borderColor: borderCol + "44",
+            }}
+          >
+            <div
+              className="w-12 h-12 rounded-2xl flex items-center justify-center mb-5"
+              style={{ backgroundColor: borderCol + "33" }}
+            >
+              <Icon size={22} style={{ color: iconColor }} />
             </div>
 
-            <div className="flex flex-col items-center gap-5 pt-4">
-              <div className="relative">
-                <div className="rounded-full overflow-hidden shadow-2xl" style={{ width: 176, height: 176, border: `7px solid #57b949`, backgroundColor: "#0a1a38" }}>
-                  <ImageWithFallback src={pablitoGuide} alt="Pablo te acompaña en el recorrido" className="w-full h-full object-cover object-center" />
-                </div>
-                <div className="absolute -bottom-2 -right-2 w-10 h-10 rounded-full flex items-center justify-center shadow-lg" style={{ backgroundColor: "#57b949" }}>
-                  <Sprout size={18} color="white" />
-                </div>
-              </div>
-              <div className="rounded-2xl rounded-tl-none px-5 py-4 shadow-md text-center w-full max-w-[180px]" style={{ backgroundColor: YELLOW }}>
-                <p className="text-sm font-black" style={{ color: NAVY }}>Pablo te acompaña</p>
-                <p className="text-xs font-bold" style={{ color: NAVY }}>en el recorrido</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <h3
+              className="text-xl font-black mb-4"
+              style={{ color: titleColor }}
+            >
+              {title}
+            </h3>
 
+            <p
+              className="text-sm leading-relaxed"
+              style={{ color: textColor }}
+            >
+              {desc}
+            </p>
+          </div>
+        )
+      )}
+    </div>
+  </div>
+</section>
       {/* ── SERVICES — navy bg ───────────────────────────────────────────────── */}
       <section id="ingles" className="py-20 relative overflow-hidden" style={{ backgroundColor: NAVY }}>
 
